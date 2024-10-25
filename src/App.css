@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.button{
+border: 2px solid red;
+margin-right: 0;
+}
+.black{
+  background-color: #ddd; 
+  margin-left: 4px;
+  
+}
+.button-flex {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.players-section {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  background-color: #e8e8e8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+}
+.c-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.player-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.player-details {
+  padding: 10px;
+ 
+}
+
+.player-details h2 {
+  margin: 0;
+padding-left: 0%;
+  border: 2px solid rebeccapurple;
+}
+
+.player-info {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose-player-btn {
+  padding: 10px 15px;
+  background-color: #ffd700;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.choose-player-btn:hover {
+  background-color: #ffcc00;
+}
