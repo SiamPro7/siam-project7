@@ -42,7 +42,7 @@ h2 {
 }
 
 .player-card {
-  background-color: #f7f1f1;
+  background-color: #fefefe;
   border: 2px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -88,16 +88,16 @@ hr {
 
 .choose-player-btn {
   padding: 10px 15px;
-  background-color: #bebdb2;
+  background-color: #01157b;
   border: none;
-  color: #000;
+  color: white;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .choose-player-btn:hover {
-  background-color: #ffcc00;
+  background-color: #3f6ae2; 
 }
 /* button functionality */
 /* Container for all selected players */

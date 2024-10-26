@@ -21,7 +21,8 @@
 
   position: absolute;
   bottom: 450px;
-  right: 30%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .padding{ 
    background: linear-gradient(90deg, #979e90, #d9c898);
