@@ -81,7 +81,7 @@
   },
   {
     "playerId": 9,
-    "name": "Babar Azam",
+    "name": "  Babar Azam",
     "country": "Pakistan",
     "image": "https://i.ibb.co.com/1zMkJ1W/Babar-Azam.jpg",
     "role": "Batsman",
@@ -91,7 +91,7 @@
   },
   {
     "playerId": 10,
-    "name": "Trent Boult",
+    "name": " Trent Boult",
     "country": "New Zealand",
     "image": "https://i.ibb.co.com/944xwL8/Trent-Boult.jpg",
     "role": "Bowler",
@@ -101,7 +101,7 @@
   },
   {
     "playerId": 11,
-    "name": "Jos Buttler",
+    "name": " Jos Buttler",
     "country": "England",
     "image": "https://i.ibb.co.com/X2rwqfZ/Jos-Buttler.jpg",
     "role": "Wicketkeeper",

@@ -5,11 +5,13 @@ const Footer = () => {
   return (
     <div className="what">
       <div className="newsletter">
-        <h2>Subscribe to our Newsletter</h2>
-        <p>Get the latest updates and news right in your inbox!</p>
-        <div className="newsletter-input">
-          <input type="email" placeholder="Enter your email" />
-          <button>Subscribe</button>
+        <div className="padding">
+          <h2>Subscribe to our Newsletter</h2>
+          <p>Get the latest updates and news right in your inbox!</p>
+          <div className="newsletter-input">
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
         </div>
       </div>
 

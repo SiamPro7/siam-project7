@@ -13,14 +13,19 @@
 }
 
 .newsletter {
-  background: linear-gradient(90deg, #f5f7fa, #c3cfe2);
-  padding: 70px;
+ background-color: #e7dfdf;
+  padding: 10px;
+  
+  
   border-radius: 8px;
-  margin: 0 auto;
-  max-width: 600px;
+
   position: absolute;
   bottom: 450px;
   right: 30%;
+}
+.padding{ 
+   background: linear-gradient(90deg, #979e90, #d9c898);
+padding: 40px 90px;
 }
 
 .newsletter h2 {
