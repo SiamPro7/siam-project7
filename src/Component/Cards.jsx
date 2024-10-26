@@ -6,7 +6,7 @@ const Cards = ({ onSelectPlayer }) => {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-    fetch("./pleyrs.json")
+    fetch("/pleyrs.json")
       .then((res) => res.json())
       .then((data) => setPlayers(data));
   }, []);
