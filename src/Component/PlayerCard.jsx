@@ -3,9 +3,9 @@ const PlayerCard = ({ player, onSelectPlayer }) => {
     <div className="player-card">
       <img src={player.image} alt={player.name} className="player-image" />
       <div className="player-details">
-        <h2>
+        <p className="user">
           <i class="fa-solid fa-user"></i> {player.name}
-        </h2>
+        </p>
         <div className="c-flex">
           <p>
             <i class="fa-solid fa-flag"></i> {player.country}
@@ -14,7 +14,7 @@ const PlayerCard = ({ player, onSelectPlayer }) => {
             <strong>{player.role}</strong>
           </p>
         </div>
-        <hr />
+        <hr/>
         <div className="player-info">
           {/* div-1 */}
           <div>
@@ -30,7 +30,7 @@ const PlayerCard = ({ player, onSelectPlayer }) => {
           {/* div-2 */}
           <div>
             <p>{player.bowlingType}</p>
-            
+
             <button onClick={onSelectPlayer} className="choose-player-btn">
               Choose Player
             </button>

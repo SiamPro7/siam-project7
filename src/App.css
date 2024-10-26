@@ -43,7 +43,7 @@ h2 {
 
 .player-card {
   background-color: #f7f1f1;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -53,6 +53,12 @@ h2 {
 .c-flex{
   display: flex;
   justify-content: space-between;
+}
+.user{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
 }
 .player-image { 
   width: 100%;
@@ -68,21 +74,21 @@ h2 {
  
 }
 
-.player-details h2 {
-  margin: 0;
-padding-left: 0%;
-  
+hr {
+  border: 1px solid black; /* Change thickness if needed */
+  color: black; /* Compatibility for some browsers */
+  background-color: black; /* Compatibility for some browsers */
 }
 
 .player-info {
-  margin: 10px 0;
+
   display: flex;
   justify-content: space-between;
 }
 
 .choose-player-btn {
   padding: 10px 15px;
-  background-color: #ffd700;
+  background-color: #bebdb2;
   border: none;
   color: #000;
   font-weight: bold;
