@@ -1,6 +1,7 @@
+
 import "./PromoBanner.css";
 
-const PromoBanner = () => {
+const PromoBanner = ({ onButtonClick }) => {
   return (
     <div className="banner">
       <div className="content">
@@ -8,9 +9,9 @@ const PromoBanner = () => {
       </div>
       <h1>Assemble Your Ultimate Dream 11 Cricket Team</h1>
       <p>Beyond Boundaries Beyond Limits</p>
-      <a href="#" className="btn">
+      <button onClick={ onButtonClick } className="btn">
         Claim Free Credit
-      </a>
+      </button>
     </div>
   );
 };

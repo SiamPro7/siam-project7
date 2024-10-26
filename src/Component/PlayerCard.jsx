@@ -1,16 +1,14 @@
-const PlayerCard = ({ player }) => {
+const PlayerCard = ({ player, onSelectPlayer }) => {
   return (
     <div className="player-card">
       <img src={player.image} alt={player.name} className="player-image" />
       <div className="player-details">
         <h2>
-          <i class="fa-solid fa-user"></i>{" "}
-          {player.name}
+          <i class="fa-solid fa-user"></i> {player.name}
         </h2>
         <div className="c-flex">
           <p>
-            <i class="fa-solid fa-flag"></i>{" "}
-            {player.country}
+            <i class="fa-solid fa-flag"></i> {player.country}
           </p>
           <p>
             <strong>{player.role}</strong>
@@ -32,7 +30,10 @@ const PlayerCard = ({ player }) => {
           {/* div-2 */}
           <div>
             <p>{player.bowlingType}</p>
-            <button className="choose-player-btn">Choose Player</button>
+            
+            <button onClick={onSelectPlayer} className="choose-player-btn">
+              Choose Player
+            </button>
           </div>
         </div>
       </div>

@@ -1,8 +1,23 @@
+import { useEffect, useState } from "react";
 import "./Navbar.css"; // Import the CSS file
 
-const Navbar = () => {
+
+const Navbar = ({coin}) => {
+   const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0); // Check if page is scrolled
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll); // Cleanup
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar NetBarSTK ${isScrolled ? "BackgroundBlur" : ""}`}>
       <div className="navbar-container">
         {/* Logo Section */}
         <div className="navbar-logo">
@@ -31,7 +46,7 @@ const Navbar = () => {
 
         {/* Coin Button Section */}
         <div className="navbar-coins">
-          <span className="coin-text">0 Coin</span>
+          <span className="coin-text">Coins:{coin}</span>
           <img src="./assets/coin.png" alt="Coin Icon" className="coin-icon" />
         </div>
       </div>

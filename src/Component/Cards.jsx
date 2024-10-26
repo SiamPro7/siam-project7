@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import PlayerCard from "./PlayerCard";
 
-const Cards = () => {
+const Cards = ({ onSelectPlayer }) => {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -17,15 +17,16 @@ const Cards = () => {
         <div>
           <h3>Available Players {players.length}</h3>
         </div>
-       
       </div>
 
       <div className="players-grid">
-        {
-        players.map((player) => (
-          <PlayerCard key={player.playerId} player={player} />
-        ))
-        }
+        {players.map((player) => (
+          <PlayerCard
+            key={player.playerId}
+            player={player}
+            onSelectPlayer={() => onSelectPlayer(player)}
+          />
+        ))}
       </div>
     </div>
   );

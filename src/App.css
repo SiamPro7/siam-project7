@@ -5,13 +5,21 @@
   text-align: center;
 }
 .button{
-border: 2px solid red;
+  margin-top: 10px;
+  display: flex ;
+  justify-content: end;
+
 margin-right: 0;
 }
+
 .black{
   background-color: #ddd; 
   margin-left: 4px;
   
+}
+.button-flex h3{
+ font-weight: bold;
+ font-size: larger;
 }
 .button-flex {
   margin: 20px;
@@ -34,7 +42,7 @@ h2 {
 }
 
 .player-card {
-  background-color: #e8e8e8;
+  background-color: #f7f1f1;
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -46,12 +54,14 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-.player-image {
+.player-image { 
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  height: 200px; /* Set a fixed height */
+  border-radius: 7%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
   border-bottom: 1px solid #ddd;
 }
+
 
 .player-details {
   padding: 10px;
@@ -61,7 +71,7 @@ h2 {
 .player-details h2 {
   margin: 0;
 padding-left: 0%;
-  border: 2px solid rebeccapurple;
+  
 }
 
 .player-info {
@@ -83,3 +93,77 @@ padding-left: 0%;
 .choose-player-btn:hover {
   background-color: #ffcc00;
 }
+/* button functionality */
+/* Container for all selected players */
+.selected-players {
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between each player row */
+}
+
+/* Individual card for each selected player */
+.selected-player-card {
+  display: flex;
+  flex-direction: row; /* Arrange details in a row */
+  align-items: center;
+  justify-content: space-between; /* Spread content horizontally */
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.selected-player-card img{
+  width: 8%;
+  height: 30%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.selected-player-card:hover {
+  transform: translateY(-3px); /* Lift slightly on hover */
+}
+
+.selected-player-card h2 {
+  font-size: 1em;
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+}
+
+.selected-player-card p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+  flex: 1;
+}
+
+/* Adjust spacing between each detail */
+.selected-player-card p + p {
+  margin-left: 20px;
+}
+/* button color -active*/
+/* Default button style */
+.button .black {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Active (yellow) button style */
+.button .active {
+  background-color: yellow;
+  color: black;
+}
+
